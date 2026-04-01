@@ -1,10 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Public Administration</title>
+<style>
+    /* ===== General Page ===== */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    background:#f4f6f9;
+    color:#333;
+}
+
+/* ===== Teacher Header ===== */
+.teacher-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#003366;
+    color:white;
+    padding:20px 40px;
+}
+
+.teacher-header h1{
+    font-size:28px;
+}
+
+.teacher-header img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid white;
+}
+
+/* ===== Outline Section ===== */
+h4{
+    text-align:center;
+    margin-top:30px;
+    color:#003366;
+}
+
+img{
+    display:block;
+    margin:20px auto;
+    max-width:80%;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ===== Download Button ===== */
+a{
+    display:block;
+    width:200px;
+    margin:10px auto 30px;
+    text-align:center;
+    background:#003366;
+    color:white;
+    padding:10px;
+    border-radius:5px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+a:hover{
+    background:#0055aa;
+}
+
+/* ===== Notes Section ===== */
+h2{
+    text-align:center;
+    color:#003366;
+    margin-top:30px;
+}
+
+/* PDF container */
+.pdf-box{
+    max-width:800px;
+    margin:20px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+embed{
+    width:100%;
+    height:350px;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+
+/* ===== Responsive ===== */
+@media(max-width:768px){
+    .teacher-header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .teacher-header img{
+        margin-top:10px;
+    }
+
+    embed{
+        height:250px;
+    }
+}
+</style>
 </head>
+
 <body>
     <h1>Public administration By Prof. Shafi Ullah</h1>
     <img src="shafi.jpg" width="150" height="150" align="right">
@@ -12,14 +120,16 @@
     <img src="Pub Adm Outline Mid Term.jpeg" height="350">
     <a href="Pub Adm Outline Mid Term.jpeg" download="Public Administration Outline Mid Term.jpeg">Download Image</a>
     <br><br>
+
     <h2>Public Administration Notes By M.Suleman</h2>
-        <embed src="Public Administration By Suleman Safi .pdf" type="application/pdf" width="50%" height="300px">
-        <a href="Public Administration By Suleman Safi .pdf" download>Download</a>
-        </embed> <br> <br>
+    <embed src="Public Administration By Suleman Safi .pdf" type="application/pdf" width="50%" height="300px">
+    <a href="Public Administration By Suleman Safi .pdf" download>Download</a>
+    </embed> <br> <br>
 
     <h2>Public Administration Notes By Mudassir Baloch</h2>
-        <embed src="Public Adm By Mudassir.pdf" type="application/pdf" width="50%" height="300px">
-        <a href="Public Adm By Mudassir.pdf" download>Download</a>
-        </embed> <br> <br>
+    <embed src="Public Adm By Mudassir.pdf" type="application/pdf" width="50%" height="300px">
+    <a href="Public Adm By Mudassir.pdf" download>Download</a>
+    </embed> <br> <br>
 </body>
+
 </html>

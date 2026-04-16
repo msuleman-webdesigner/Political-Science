@@ -17,38 +17,38 @@
         body {
             margin: 0;
             background: #f4f6f8;
-            font-size: 16px;
+            font-size: 18px;
         }
         main {
             max-width: 1024px;
             margin: 0 auto;
-            padding: 36px 22px 42px;
+            padding: 42px 24px 48px;
         }
         .hero {
             background: linear-gradient(135deg, #0e3d72, #1e5ba6);
             color: #fff;
-            padding: 44px 32px;
+            padding: 50px 36px;
             border-radius: 24px;
             box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
         }
         .hero h1 {
-            margin: 0 0 18px;
-            font-size: clamp(2.2rem, 5vw, 3.6rem);
+            margin: 0 0 20px;
+            font-size: clamp(2.4rem, 5vw, 4rem);
             line-height: 1.05;
         }
         .hero p {
             margin: 0;
             max-width: 780px;
-            line-height: 2;
-            font-size: 1.05rem;
+            line-height: 2.1;
+            font-size: 1.2rem;
         }
         .intro,
         .subjects {
-            margin-top: 36px;
+            margin-top: 42px;
         }
         .intro {
             display: grid;
-            gap: 32px;
+            gap: 36px;
             grid-template-columns: minmax(0, 1fr) 320px;
             align-items: start;
         }
@@ -60,50 +60,51 @@
             box-shadow: 0 24px 45px rgba(15, 23, 42, 0.12);
         }
         h2 {
-            margin: 0 0 14px;
+            margin: 0 0 16px;
             color: #0f3d70;
-            font-size: 1.55rem;
+            font-size: 1.75rem;
         }
         p,
         li {
-            font-size: 1.05rem;
-            line-height: 1.9;
+            font-size: 1.2rem;
+            line-height: 2;
         }
         ul {
             padding-left: 1.3rem;
             margin: 0;
         }
         li {
-            margin-bottom: 1rem;
+            margin-bottom: 1.1rem;
         }
         .card-grid {
             display: grid;
-            gap: 24px;
+            gap: 26px;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            margin-top: 20px;
+            margin-top: 24px;
         }
         .card {
             background: #fff;
-            padding: 26px;
+            padding: 30px;
             border-radius: 22px;
             box-shadow: 0 18px 35px rgba(15, 23, 42, 0.08);
         }
         .card h3 {
-            margin: 0 0 16px;
-            font-size: 1.2rem;
+            margin: 0 0 18px;
+            font-size: 1.4rem;
         }
         a {
             color: #0e3d72;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
+            font-size: 1.15rem;
         }
         a:hover {
             text-decoration: underline;
         }
         footer {
-            margin-top: 46px;
+            margin-top: 48px;
             text-align: center;
-            font-size: 1rem;
+            font-size: 1.05rem;
             color: #475569;
         }
         @media (max-width: 900px) {
@@ -116,23 +117,23 @@
         }
         @media (max-width: 620px) {
             .hero {
-                padding: 30px 20px;
+                padding: 32px 20px;
                 border-radius: 20px;
             }
             .hero h1 {
-                font-size: 2.4rem;
+                font-size: 2.6rem;
             }
             .hero p,
             p,
             li,
             footer {
-                font-size: 1rem;
+                font-size: 1.1rem;
             }
             .card {
-                padding: 22px;
+                padding: 24px;
             }
             .card-grid {
-                gap: 18px;
+                gap: 20px;
             }
         }
     </style>

@@ -1,107 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Political Science</title>
-    <link rel="stylesheet" href="style.css">
-
+    <title>Political Science Learning Portal</title>
     <style>
-        .one{
-            border: 2px solid rgb(234, 20, 20);
+        :root {
+            color-scheme: light;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f4f6f8;
+            color: #1f2937;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            background: #f4f6f8;
+        }
+        main {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 32px 20px;
+        }
+        .hero {
+            background: linear-gradient(135deg, #0e3d72, #1e5ba6);
+            color: #fff;
+            padding: 40px 32px;
+            border-radius: 24px;
+            box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+        }
+        .hero h1 {
+            margin: 0 0 16px;
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            line-height: 1.05;
+        }
+        .hero p {
+            margin: 0;
+            max-width: 780px;
+            line-height: 1.9;
+            font-size: 1rem;
+        }
+        .intro,
+        .subjects {
+            margin-top: 32px;
+        }
+        .intro {
+            display: grid;
+            gap: 28px;
+            grid-template-columns: minmax(0, 1fr) 300px;
+            align-items: start;
+        }
+        .intro img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 18px;
+            object-fit: cover;
+            box-shadow: 0 24px 45px rgba(15, 23, 42, 0.12);
+        }
+        h2 {
+            margin: 0 0 12px;
+            color: #0f3d70;
+            font-size: 1.45rem;
+        }
+        p,
+        li {
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+        ul {
+            padding-left: 1.2rem;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 0.85rem;
+        }
+        .card-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            margin-top: 18px;
+        }
+        .card {
+            background: #fff;
+            padding: 24px;
+            border-radius: 20px;
+            box-shadow: 0 18px 35px rgba(15, 23, 42, 0.08);
+        }
+        .card h3 {
+            margin: 0 0 14px;
+            font-size: 1.1rem;
+        }
+        a {
+            color: #0e3d72;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 42px;
             text-align: center;
-            background-color: aquamarine;
+            font-size: 0.95rem;
+            color: #475569;
+        }
+        @media (max-width: 760px) {
+            .hero {
+                padding: 28px 20px;
+            }
+            .intro {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
-
-<body class="home">
-    <section class="hero">
-
-        <h1>Welcome to Political Science Learning Portal</h1>
-        <p class="home"> I am very happy to provide this platform for my dear classfellows of
-            4rth Semester Political Science. <br> <br>
-            This website is designed to be a comprehensive resource for students
-            of Political Science, offering detailed explanations, notes, and study materials for various topics and
-            subjects. <br> <br>
-            You can also download the outline of each subject's and notes in pdf
-            format. <br> <br>
-            You can also upload your own notes and resources to help your
-            classmates. <br> <br>
-            I hope this website will be a valuable tool for your studies and help you succeed in your academic journey.
-            <br> <br>
-            Thank you for visiting, and I wish you all the best in your studies! <br><br>
-            Let’s begin our journey and dive into the vast ocean of Political Science, where ideas, power, and
-            governance shape the destiny of nations.</p>
-
-
-        <h2>About Me</h2>
-        <p style="font-size: 18px">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; My name is Muhammad Suleman from Panaila, Dera Ismail Khan. <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I am a Web Designer & Digital Marketing Specialist. <br></p>
-
-
-        <h2>Introduction to Political Science</h2> <img src="https://i.ytimg.com/vi/5z9rMU2A7l8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB4njexytNZIIyUrtRl7M0h_bhgIQ"
-            alt="Aristotle" style="float:right" width="200" height="150">
-        <p style="font-size: 18px"> Political science is a
-            comprehensive social science discipline dedicated to the systematic study of the
-            state, government, politics, and power dynamics. It investigates the theory, description, analysis, and
-            prediction of political behavior, systems, and institutions at local, state, national, and international
-            levels.</p>
-        
-
-        <h4>Evolution of the Definition</h4>
-        <ol>
-
-            <li>
-                <p style="font-size: 18px">
-                    <b>Traditional Approach (Legal/Institutional):</b> Focused almost exclusively on the state,
-                    government, constitutions, and formal institutions, often with a normative approach to what "ought"
-                    to be.
-                </p>
-            </li>
-            <li>
-                </p>
-                <p style="font-size: 18px">
-                    <b>Modern Approach (Behavioural/Pluralistic):</b> Emerged in the 20th century, focusing on
-                    political activities, human behavior, power, and informal processes, utilizing empirical,
-                    value-free, or
-                    "value-relevant" analysis.
-                </p>
-            </li>
-        </ol>
-    </section>
-
-    <nav>
-        <table border="1">
-            <caption>Subjects in 4rth Semester</caption>
-            <tbody>
-                <tr>
-                    <td>Monday To Wednesday</td>
-                    <td>
-                        <ol>
-                            <li> <a href="Comparative Politics.html">Comparative Politics</a> </li>
-                            &nbsp;<li> <a href="Commerce.html">Intro to Commerce</a> </li>
-                            &nbsp;<li> <a href="Public Administration.html">Public Administration</a> </li>
-                        </ol>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Thursday To Saturday</td>
-                    <td>
-                        <ol start="4">
-                            <li> <a href="International Organization.html">International Organization</a> </li>
-                            &nbsp;<li> <a href="Western Political Thoughts.html">Western Political Thoughts</a> </li>
-                            &nbsp;<li> <a href="Muslim Political Thoughts.html">Muslim Political Thoughts</a> </li>
-                        </ol>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </nav>
+<body>
+    <main>
+        <section class="hero">
+            <h1>Political Science Learning Portal</h1>
+            <p>Welcome to a streamlined study hub for 4th semester Political Science. Use this portal to access subject pages, review key concepts, and prepare efficiently for class and exams.</p>
+        </section>
+        <section class="intro">
+            <div>
+                <h2>About this Portal</h2>
+                <p>This website is built for students to explore the essentials of political science with clear summaries and direct links to each subject page. It is optimized for fast reading and easy navigation.</p>
+                <h2>Introduction to Political Science</h2>
+                <p>Political science examines how governments are organized, how decisions are made, and how power operates in societies. It blends institutional study with empirical insight into political behavior at all levels.</p>
+                <h2>Evolution of the Field</h2>
+                <ul>
+                    <li><strong>Traditional:</strong> Focused on constitutions, institutions, and formal political structures.</li>
+                    <li><strong>Modern:</strong> Emphasizes behavior, public opinion, and evidence-based analysis.</li>
+                </ul>
+            </div>
+            <img src="https://i.ytimg.com/vi/5z9rMU2A7l8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB4njexytNZIIyUrtRl7M0h_bhgIQ" alt="Political science illustration">
+        </section>
+        <section class="subjects">
+            <h2>4th Semester Subjects</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Monday to Wednesday</h3>
+                    <ul>
+                        <li><a href="Comparative Politics.html">Comparative Politics</a></li>
+                        <li><a href="Commerce.html">Intro to Commerce</a></li>
+                        <li><a href="Public Administration.html">Public Administration</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Thursday to Saturday</h3>
+                    <ul>
+                        <li><a href="International Organization.html">International Organization</a></li>
+                        <li><a href="Western Political Thoughts.html">Western Political Thoughts</a></li>
+                        <li><a href="Muslim Political Thoughts.html">Muslim Political Thoughts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>Created by Muhammad Suleman | Web designer and digital marketing specialist from Panaila, Dera Ismail Khan.</footer>
+    </main>
 </body>
-</table>
-</nav>
-</body>
-
 </html>
